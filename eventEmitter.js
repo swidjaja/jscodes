@@ -1,6 +1,3 @@
-// https://nodejs.org/api/events.html#events_class_events_eventemitter
-// mwiller@box.com
-
 /*
 
 var e = new EventEmitter();
