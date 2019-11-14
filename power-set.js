@@ -3,9 +3,7 @@ const powerSet = (arr) => {
     for (let idx = 0; idx < tail.length; idx += 1) {
       const combined = [...front, tail[idx]];
       soln.push(combined);
-      if (tail[idx + 1]) {
-        helper(soln, combined, tail.slice(idx + 1));
-      }
+      helper(soln, combined, tail.slice(idx + 1));
     }
   }
 
@@ -25,5 +23,12 @@ const powerSet = (arr) => {
   }
   return soln;
 };
+
+// console.log(powerSet([]));
+// console.log(powerSet([1]));
+// console.log(powerSet([1,2]));
+// console.log(powerSet([1,2,3]));
+// console.log(powerSet([1,2,3,4]));
+// console.log(powerSet([1,2,3,4,5]));
 
 module.exports = powerSet;
