@@ -11,6 +11,7 @@ const calculate = (oper, operand1, operand2) => {
     }
     return operand1 / operand2;
   }
+  throw new Error(`${oper} is not a valid operator`);
 };
 const precendences = {
   '+' : 1,
